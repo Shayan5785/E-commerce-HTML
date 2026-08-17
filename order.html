@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Place an Order</title>
+</head>
+
+<body>
+
+    <h1>Checkout & Order Form</h1>
+
+    <!-- Navigation Menu -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">View Our Products</a></li>
+        <li><a href="order.html">Place an Order</a></li>
+    </ul>
+
+    <br>
+
+    <h2>Fill out your details below:</h2>
+
+    <form>
+        <!-- Basic Text Inputs -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+        <br><br>
+
+        <label for="accountpass">Create an Account Password:</label>
+        <input type="password" id="accountpass" name="accountpass">
+        <br><br>
+
+        <!-- Dropdown Menu -->
+        <label for="item">Select Product:</label>
+        <select id="item" name="item">
+            <option value="headphones">Wireless Headphones - $45.00</option>
+            <option value="keyboard">Gaming Keyboard - $30.00</option>
+            <option value="mouse">Wireless Mouse - $15.00</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <p><b>Choose Delivery Speed:</b></p>
+        <input type="radio" id="standard" name="shipping" value="standard">
+        <label for="standard">Standard Delivery (3-5 Days)</label>
+        <br>
+
+        <input type="radio" id="express" name="shipping" value="express">
+        <label for="express">Express Delivery (Next Day)</label>
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="instructions">Delivery Instructions:</label>
+        <br>
+        <textarea id="instructions" name="instructions" rows="4" cols="40"
+            placeholder="E.g., Leave the package at the front door..."></textarea>
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="terms" name="terms" value="agreed">
+        <label for="terms">I agree to the Terms and Conditions</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Place Order!">
+    </form>
+
+</body>
+
+</html>
